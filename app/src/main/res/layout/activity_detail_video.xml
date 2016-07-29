@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:nestedScrollingEnabled="true"
+        android:minHeight="250dp"
+        android:minWidth="250dp" />
+
+
+    <TextView
+        android:id="@+id/textTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"/>
+
+    <TextView
+        android:id="@+id/textDescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitre"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonFav"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textDescr"
+        android:src="@drawable/star"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonLire"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/textDescr"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/play"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:text="Ajouter aux favoris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonFav"/>
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:text="Lire"
+        android:layout_width="match_parent"
+        android:layout_alignLeft="@id/imageButtonLire"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButtonLire"/>
+
+</RelativeLayout>
